@@ -1,5 +1,21 @@
 return {
-  "L3MON4D3/LuaSnip",
-  version = "v2.*",
-  build = "make install_jsregexp",
+  "nvim-neo-tree/neo-tree.nvim",
+  opts = {
+    filesystem = {
+      filtered_items = {
+        -- visible = true,
+        show_hidden_count = true,
+        hide_dotfiles = false,
+        hide_gitignored = true,
+        -- Shift + h to show hidden items
+        hide_by_name = {
+          "node_modules",
+          ".git",
+          -- '.DS_Store',
+          -- 'thumbs.db',
+        },
+        never_show = {},
+      },
+    },
+  },
 }
