@@ -4,12 +4,13 @@
 
 vim.keymap.set("i", "jk", "<Esc>", { silent = true, noremap = true })
 
-vim.api.nvim_set_keymap("n", "<D-c>", '"+y', { noremap = true, silent = true })
-vim.api.nvim_set_keymap("v", "<D-c>", '"+y', { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<C-c>", '"+y', { noremap = true, silent = true })
-vim.api.nvim_set_keymap("v", "<C-c>", '"+y', { noremap = true, silent = true })
+-- vim.keymap.set("n", "<D-c>", '"+y', { noremap = true, silent = true })
+-- vim.keymap.set("v", "<D-c>", '"+y', { noremap = true, silent = true })
+-- vim.keymap.set("n", "<C-c>", '"+y', { noremap = true, silent = true })
+-- vim.keymap.set("v", "<C-c>", '"+y', { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap("t", "<D-k>", "<Esc>", { noremap = true })
+vim.keymap.set("t", "<D-[>", "<Esc>", { noremap = true })
+-- vim.keymap.set("n", "<leader>t", ":terminal<CR>", { noremap = true })
 
 -- local keymaps = {
 --   { from = "jk", to = "<Esc>", mode = { "i" } },
